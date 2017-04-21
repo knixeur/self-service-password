@@ -23,6 +23,7 @@
 # Polish
 #==============================================================================
 $messages['noltbconfig'] = "You must copy conf/config.inc-sample.php to conf/config.inc.php to configure LTB Self Service Password";
+$messages['phpupgraderequired'] = "PHP upgrade required";
 $messages['nophpldap'] = "Wymagane jest zainstalowanie PHP-LDAP zanim użyjesz tego narzędzia";
 $messages['nophpmhash'] = "Wymagane jest zainstalowanie PHP-mhash przed użyciem trybu Samba";
 $messages['ldaperror'] = "Nie można połączyć się z bazą LDAP";
@@ -105,7 +106,6 @@ $messages['username'] = "Username";
 $messages['smscrypttokensrequired'] = "You can't use reset by SMS without crypt_tokens setting";
 $messages['smsuserfound'] = "Check that user information are correct and press Send to get SMS token";
 $messages['smstoken'] = "SMS token";
-$messages['nophpmcrypt'] = "You should install PHP mcrypt to use cryptographic functions";
 $messages['getuser'] = "Get user";
 $messages['nophpmbstring'] = "You should install PHP mbstring";
 $messages['menuquestions'] = "Question";
@@ -120,5 +120,15 @@ $messages['emptysetquestionsform'] = "Set your password reset questions";
 $messages['emptysendsmsform'] = "Get a reset code";
 $messages['sameaslogin'] = "Your new password is identical to your login";
 $messages['policydifflogin'] = "Your new password may not be the same as your login";
+$messages['changesshkeymessage'] = "Witaj {login}, \n\nTwoja SSH Key została zmieniona. \n\nW przypadku nie zainicjować tę zmianę, należy natychmiast skontaktować się z administratorem.";
+$messages['menusshkey'] = "Klucz SSH";
+$messages['changehelpsshkey'] = "<a href=\"?action=changesshkey\">Zmień swój klucz SSH</a>";
+$messages['sshkeychanged'] = "Twój klucz SSH został zmieniony";
+$messages['sshkeyrequired'] = "SSH Key jest wymagane";
+$messages['changesshkeysubject'] = "Twój klucz SSH został zmieniony";
+$messages['sshkey'] = "SSH Key";
+$messages['emptysshkeychangeform'] = "Zmień swój klucz SSH";
+$messages['changesshkeyhelp'] = "Wprowadź swoje hasło i nowy klucz SSH.";
+$messages['sshkeyerror'] = "SSH Key został odrzucony przez katalogu LDAP";
 
 ?>

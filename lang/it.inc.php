@@ -23,6 +23,7 @@
 # Italian
 #==============================================================================
 $messages['noltbconfig'] = "You must copy conf/config.inc-sample.php to conf/config.inc.php to configure LTB Self Service Password";
+$messages['phpupgraderequired'] = "PHP upgrade required";
 $messages['nophpldap'] = "Devi installare PHP LDAP per usare questo strumento";
 $messages['nophpmhash'] = "Devi installare PHP mhash per usare il modo Samba";
 $messages['ldaperror'] = "Non posso accedere alla directory LDAP";
@@ -90,7 +91,6 @@ $messages['changesubject'] = "La tua password e' stata cambiata";
 $messages['badcaptcha'] = "Il codice CAPTCHA non e' corretto. Riprova.";
 $messages['notcomplex'] = "La tua password non e' abbastanza complessa";
 $messages['policycomplex'] = "Numero minimo di tipi di carattere:";
-$messages['nophpmcrypt'] = "Devi installare PHP mcrypt per usare le funzioni crittografiche";
 $messages['smsresetmessage'] = "Il tuo codice per il reset della password e':";
 $messages['smscrypttokensrequired'] = "Non puoi utilizzare il reset via SMS senza crypt_tokens";
 $messages['smsnotsent'] = "Errore durante l'invio dell'SMS";
@@ -118,5 +118,14 @@ $messages['emptysetquestionsform'] = "Imposta la domanda per il reset della pass
 $messages['emptysendsmsform'] = "Ottieni un codice di reset";
 $messages['sameaslogin'] = "La nuova password è identica all'utente di login";
 $messages['policydifflogin'] = "La nuova password non può essere uguale all'utente di login";
-
+$messages['changesshkeymessage'] = "Ciao {login}, \n\nIl SSH Key è stato modificato. \n\nSe non sei l'autore questo cambiamento, contattare immediatamente l'amministratore.";
+$messages['menusshkey'] = "SSH Key";
+$messages['changehelpsshkey'] = "<a href=\"?action=changesshkey\">Cambia la tua chiave SSH</a>";
+$messages['sshkeychanged'] = "La vostra chiave SSH è stata cambiata";
+$messages['sshkeyrequired'] = "è richiesto SSH Key";
+$messages['changesshkeysubject'] = "La vostra chiave SSH è stata modificata";
+$messages['sshkey'] = "SSH Key";
+$messages['emptysshkeychangeform'] = "Cambia la tua chiave SSH";
+$messages['changesshkeyhelp'] = "Inserire la password e la nuova chiave SSH.";
+$messages['sshkeyerror'] = "SSH Key è stata rifiutata dalla directory LDAP";
 ?>

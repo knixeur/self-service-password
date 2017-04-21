@@ -23,6 +23,7 @@
 # Czech
 #==============================================================================
 $messages['noltbconfig'] = "You must copy conf/config.inc-sample.php to conf/config.inc.php to configure LTB Self Service Password";
+$messages['phpupgraderequired'] = "PHP upgrade required";
 $messages['nophpldap'] = "Pro použití tohoto nástroje nainstalujte PHP LDAP";
 $messages['nophpmhash'] = "Pro použití režimu Samba nainstalujte PHP mhash";
 $messages['ldaperror'] = "Nelze se přihlásit k LDAP adresáři";
@@ -93,7 +94,6 @@ $messages['changesubject'] = "Vaše heslo bylo změněno";
 $messages['badcaptcha'] = "Kód reCAPTCHA nebyl zadán správně. Zadejte jej prosím znovu.";
 $messages['notcomplex'] = "Heslo neobsahuje dostatek skupin znaků";
 $messages['policycomplex'] = "Minimální počet různých skupin znaků:";
-$messages['nophpmcrypt'] = "Pro použití šifrovacích funkcí nainstalujte PHP mcrypt";
 $messages['sms'] = "Telefonní číslo";
 $messages['smsresetmessage'] = "Řetezec pro obnovu hesla je:";
 $messages['sendsmshelp'] = "Vložte své uživatelské jméno pro získání kódu pro obnovu hesla. Poté přepište kód z doručené SMS.";
@@ -118,5 +118,15 @@ $messages['emptysetquestionsform'] = "Nastavte otázku pro obnovu hesla";
 $messages['emptysendsmsform'] = "Získat kód pro obnovu hesla";
 $messages['sameaslogin'] = "Vaše nové heslo je shodné s přihlašovacím jménem";
 $messages['policydifflogin'] = "Vaše nové heslo nesmí být stejné jako vaše přihlašovací jméno";
+$messages['changesshkeymessage'] = "Dobrý den, {login}\n\nVaše SSH klíč byl změněn.\n\nPokud jste nevznesli tuto změnu, obraťte se ihned na svého správce.";
+$messages['sshkeyrequired'] = "SSH klíč je vyžadováno";
+$messages['emptysshkeychangeform'] = "Změňte svůj SSH klíč";
+$messages['changesshkeyhelp'] = "Zadejte heslo a nové SSH klíč.";
+$messages['changehelpsshkey'] = "<a href=\"?action=changesshkey\">Změňte svůj SSH klíč</a>";
+$messages['changesshkeysubject'] = "Váš SSH klíč byl změněn";
+$messages['sshkeychanged'] = "Váš SSH klíč byl změněn";
+$messages['sshkeyerror'] = "SSH klíč byl odmítnut v adresáři LDAP";
+$messages['sshkey'] = "SSH klíč";
+$messages['menusshkey'] = "SSH klíč";
 
 ?>

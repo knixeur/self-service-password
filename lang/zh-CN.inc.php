@@ -23,6 +23,7 @@
 # Simplified Chinese
 #==============================================================================
 $messages['noltbconfig'] = "You must copy conf/config.inc-sample.php to conf/config.inc.php to configure LTB Self Service Password";
+$messages['phpupgraderequired'] = "PHP upgrade required";
 $messages['nophpldap'] = "您需要安装PHP LDAP才能使用本工具";
 $messages['nophpmhash'] = "您需要安装PHP mhash才能使用Samba模式";
 $messages['ldaperror'] = "不能访问LDAP服务器";
@@ -93,7 +94,6 @@ $messages['changesubject'] = "您的密码已修改";
 $messages['badcaptcha'] = "验证码输入错误。请重试。";
 $messages['notcomplex'] = "您的密码没有包含足够的字符类型";
 $messages['policycomplex'] = "最少字符类型:";
-$messages['nophpmcrypt'] = "您需要安装PHP mcrypt使用加密功能";
 $messages['sms'] = "短信号码";
 $messages['smsresetmessage'] = "您的密码重置口令:";
 $messages['sendsmshelp'] = "输入您的用户名获取密码重置短信。然后输入短信中的口令。";
@@ -118,5 +118,15 @@ $messages['emptysetquestionsform'] = "Set your password reset questions";
 $messages['emptysendsmsform'] = "Get a reset code";
 $messages['sameaslogin'] = "Your new password is identical to your login";
 $messages['policydifflogin'] = "Your new password may not be the same as your login";
+$messages['changesshkeymessage'] = "{login}，您好：\n\n您的SSH金钥已变更。\n\n如果您没有启动这项变更，请立即与您的管理员联络。";
+$messages['menusshkey'] = "SSH密钥";
+$messages['changehelpsshkey'] = "<a href=\"?action=changesshkey\">更改SSH密钥</a>";
+$messages['sshkeychanged'] = "您的SSH密钥已更改";
+$messages['sshkeyrequired'] = "需要SSH密钥";
+$messages['changesshkeysubject'] = "您的SSH密钥已更改";
+$messages['sshkey'] = "SSH密钥";
+$messages['emptysshkeychangeform'] = "更改SSH密钥";
+$messages['changesshkeyhelp'] = "输入您的密码和新的SSH密钥。";
+$messages['sshkeyerror'] = "LDAP目录拒绝了SSH密钥";
 
 ?>
